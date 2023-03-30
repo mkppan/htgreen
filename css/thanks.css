@@ -1,0 +1,76 @@
+/* 
+  Google Fonts
+   "Sofia Sans Condensed" Black 900
+  "Sofia Sans Condensed" SemiBold 600
+
+  font-family: 'Sofia Sans Condensed', sans-serif;
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@600;900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;   /* includes padding and border in elements width and height */
+}
+
+html {
+  font-size: 100%;     /* = 16px */
+  max-height: 100%;
+  max-width: 100%;
+  background-image: url("/image/bg800bulbs.jpg");
+  background-size: auto;
+  background-position: top;
+}
+
+/* 
+  Set view height to 100%, which is necessary for the device to know in order to vertically centre the flexbox image if necessary.
+*/
+
+body {
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  color: white;
+  text-align: center;
+}
+
+p {
+  margin: 1rem 2rem;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  margin: 2rem 2rem;
+  text-align: center;
+  border-bottom: 1px solid rgb(169, 169, 169);
+}
+
+hr {
+  margin: 0 2rem;
+  opacity:50%;
+  color: rgb(169, 169, 169);
+}
+
+/* To allow for responsive layout */
+
+@media (max-width: 712px) {   /* Galaxy Tab S4 and smaller screen */
+  h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin: 2rem 2rem;
+  }
+}
+
+@media (max-width: 320px) { /* Nokia Lumins 520 and smaller screen */
+  h1 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    margin: 2rem 1rem;
+  }
+}
